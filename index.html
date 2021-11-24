@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 7</title>
+</head>
+<body>
+<h1>Dice Game</h1>
+<p>You rolled the dice...</p>
+<script>
+    let terninger = [], //Lage tom array for ryddighet//
+        sider = 0;
+    terninger[1] = "<img src=terninger/terning1.svg width=50px height=auto>"; //Legg til bilder i arrayen//
+    terninger[2] = "<img src=terninger/terning2.svg width=50px height=auto>";
+    terninger[3] = "<img src=terninger/terning3.svg width=50px height=auto>";
+    terninger[4] = "<img src=terninger/terning4.svg width=50px height=auto>";
+    terninger[5] = "<img src=terninger/terning5.svg width=50px height=auto>";
+    terninger[6] = "<img src=terninger/terning3.svg width=50px height=auto>";
+    sider = Math.floor(Math.random() * 6) + 1; //Gir oss hvor mange sider terningen skal ha//
+    document.write(terninger[sider]); //Printer ut terningen ved å legge sammen sidene med arrayen//
+</script>
+<div style="border: 10px">
+<a href="index.html">Click here to reroll</a>
+</div>
+
+</body>
+</html>
